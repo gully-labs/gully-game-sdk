@@ -1,3 +1,5 @@
+<p align="center"><a href="https://gullystudio.xyz"><img src="Documentation~/brand/x-banner-1500x500.png" width="750" height="250" alt="GullyStudio"></a></p>
+
 # Gully Game SDK
 
 Unity (6 LTS) client for the services every [Gully Studio](https://gullystudio.xyz) game uses, open to any Unity
@@ -79,6 +81,13 @@ Unity game ──GullyIdClient──▶ id.gullychain.xyz (Hydra OIDC)        su
 
 Gully Chain Testnet: chain id `485590`, explorer `https://testnet-explorer.gullychain.xyz`, GullyArcade v1.0 at
 `0xe573789b235314661DEdDA08a18Ca261c069c872`. Mainnet constants are added when the chain launches.
+
+## Brand defaults
+
+`GullyStudioTheme` carries the GullyStudio brand tokens (navy `#06121F`, Studio blue `#1E8BFF`, cyan `#19D3FF`,
+green `#2EE68A`, silver `#E8EEF5`, muted `#8FA6C2`, the cyan-to-blue Studio gradient, Montserrat) and
+`GullyStudioTheme.ApplyTo(Camera.main)` sets the sample scenes' clear colour. Brand files in `Documentation~/brand/`
+are byte-exact kit copies; the full kit is served at https://gullystudio.xyz/brand/.
 
 ## Design notes
 

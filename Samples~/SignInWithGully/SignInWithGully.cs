@@ -5,6 +5,8 @@ namespace GullyLabs.GameSdk.Samples
 {
     public class SignInWithGully : MonoBehaviour
     {
+        private void Awake() => GullyStudioTheme.ApplyTo(Camera.main); // sample scenes use the GullyStudio brand defaults
+
         public string clientId = "";
         public int loopbackPort = 53682;
 

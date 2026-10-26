@@ -14,3 +14,4 @@ First public version. Work in progress: APIs may change before 1.0.
 - Gully Arcade: `GullyArcadeClient` (run tickets, score attestation, `submitScore` calldata, leaderboard and season
   reads).
 - `ITransactionSender` is the single wallet seam; no key custody in the SDK.
+- `GullyStudioTheme`: GullyStudio brand kit tokens and sample-scene defaults; brand files under `Documentation~/brand/`.

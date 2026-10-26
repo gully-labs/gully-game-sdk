@@ -5,6 +5,8 @@ namespace GullyLabs.GameSdk.Samples
 {
     public class PayPerCall : MonoBehaviour
     {
+        private void Awake() => GullyStudioTheme.ApplyTo(Camera.main); // sample scenes use the GullyStudio brand defaults
+
         public string resourceUrl = "https://example.gullystudio.xyz/paid/level-7";
         public string playerAddress = "0x0000000000000000000000000000000000000001";
 

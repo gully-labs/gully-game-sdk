@@ -27,6 +27,7 @@ namespace GullyLabs.GameSdk.Samples
 
         private async void Start()
         {
+            GullyStudioTheme.ApplyTo(Camera.main); // sample scenes use the GullyStudio brand defaults
             _arcade = new GullyArcadeClient();
             var seasonId = await _arcade.LatestSeasonIdAsync();
             Debug.Log(seasonId == 0 ? "[sample] no season open" : $"[sample] season #{seasonId}");
