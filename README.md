@@ -1,3 +1,22 @@
+<!-- gully-header:start -->
+<a href="https://gullystudio.xyz"><img src="https://gullychain.xyz/brand/gully-labs/gully-game-sdk.svg" alt="Gully Labs · Gully Game SDK" width="100%"></a>
+
+<p align="center">
+  <a href="https://gullylabs.xyz"><img src="https://img.shields.io/badge/gullylabs.xyz-00D2FF?style=for-the-badge&labelColor=06050D&logo=googlechrome&logoColor=06050D" alt="Website"></a>
+  <a href="https://gullystudio.xyz"><img src="https://img.shields.io/badge/gullystudio.xyz-0B0A16?style=for-the-badge&labelColor=06050D&logo=googlechrome&logoColor=00D2FF" alt="Gully Studio"></a>
+  <a href="https://docs.gullylabs.xyz"><img src="https://img.shields.io/badge/Docs-0B0A16?style=for-the-badge&labelColor=06050D&logo=readthedocs&logoColor=00D2FF" alt="Docs"></a>
+  <a href="https://x.com/Gully_Labs"><img src="https://img.shields.io/badge/@Gully__Labs-0B0A16?style=for-the-badge&labelColor=06050D&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://t.me/GullyLabsNews"><img src="https://img.shields.io/badge/Telegram-0B0A16?style=for-the-badge&labelColor=06050D&logo=telegram&logoColor=26A5E4" alt="Telegram"></a>
+  <a href="https://github.com/gully-labs"><img src="https://img.shields.io/badge/GitHub-0B0A16?style=for-the-badge&labelColor=06050D&logo=github&logoColor=white" alt="GitHub"></a>
+</p>
+
+<p align="center"><b>Gully Game SDK: Unity client for Gully ID sign-in, Gully Chain reads, Gully Pay x402 pay-per-call and Gully Arcade score attestation. MIT.</b></p>
+
+<p align="center"><sub>Built by <a href="https://gullylabs.xyz">Gully Labs</a>. You Think It, We Ship It.</sub></p>
+
+---
+<!-- gully-header:end -->
+
 <p align="center"><a href="https://gullystudio.xyz"><img src="Documentation~/brand/x-banner-1500x500.png" width="750" height="250" alt="GullyStudio"></a></p>
 
 # Gully Game SDK
