@@ -1,0 +1,41 @@
+{
+  "name": "xyz.gullylabs.gamesdk",
+  "version": "0.1.0",
+  "displayName": "Gully Game SDK",
+  "description": "Unity client for Gully Labs services: Gully ID sign-in (OIDC + PKCE), Gully Chain reads (JSON-RPC, ABI), Gully Pay x402 pay-per-call, and Gully Arcade score attestation + on-chain leaderboards. MIT.",
+  "unity": "6000.0",
+  "keywords": ["gully", "gullychain", "web3", "oidc", "x402", "leaderboard"],
+  "author": {
+    "name": "Gully Labs",
+    "url": "https://gullylabs.xyz"
+  },
+  "license": "MIT",
+  "documentationUrl": "https://github.com/gully-labs/gully-game-sdk#readme",
+  "changelogUrl": "https://github.com/gully-labs/gully-game-sdk/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/gully-labs/gully-game-sdk/blob/main/LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gully-labs/gully-game-sdk.git"
+  },
+  "dependencies": {
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Arcade Quickstart",
+      "description": "Start a run, attest the score, build the submitScore calldata and read the leaderboard.",
+      "path": "Samples~/ArcadeQuickstart"
+    },
+    {
+      "displayName": "Sign in with Gully",
+      "description": "OIDC authorization code + PKCE against id.gullychain.xyz with a loopback redirect (desktop/editor).",
+      "path": "Samples~/SignInWithGully"
+    },
+    {
+      "displayName": "Pay per call (x402)",
+      "description": "Fetch a paid resource: parse the 402, pay on Gully Chain, retry with the payment header.",
+      "path": "Samples~/PayPerCall"
+    }
+  ]
+}

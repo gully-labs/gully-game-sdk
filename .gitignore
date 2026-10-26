@@ -1,0 +1,16 @@
+# Unity scratch (this repo is a package, not a project)
+Library/
+Temp/
+Obj/
+Logs/
+UserSettings/
+*.csproj
+*.sln
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
+# never
+.env
+.env.*
+*.ulf
