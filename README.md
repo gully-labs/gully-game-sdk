@@ -1,18 +1,25 @@
 <!-- gully-header:start -->
-<a href="https://gullystudio.xyz"><img src="https://gullychain.xyz/brand/gully-labs/gully-game-sdk.svg" alt="Gully Labs · Gully Game SDK" width="100%"></a>
-
 <p align="center">
-  <a href="https://gullylabs.xyz"><img src="https://img.shields.io/badge/gullylabs.xyz-00D2FF?style=for-the-badge&labelColor=06050D&logo=googlechrome&logoColor=06050D" alt="Website"></a>
-  <a href="https://gullystudio.xyz"><img src="https://img.shields.io/badge/gullystudio.xyz-0B0A16?style=for-the-badge&labelColor=06050D&logo=googlechrome&logoColor=00D2FF" alt="Gully Studio"></a>
-  <a href="https://docs.gullylabs.xyz"><img src="https://img.shields.io/badge/Docs-0B0A16?style=for-the-badge&labelColor=06050D&logo=readthedocs&logoColor=00D2FF" alt="Docs"></a>
-  <a href="https://x.com/Gully_Labs"><img src="https://img.shields.io/badge/@Gully__Labs-0B0A16?style=for-the-badge&labelColor=06050D&logo=x&logoColor=white" alt="X"></a>
-  <a href="https://t.me/GullyLabsNews"><img src="https://img.shields.io/badge/Telegram-0B0A16?style=for-the-badge&labelColor=06050D&logo=telegram&logoColor=26A5E4" alt="Telegram"></a>
-  <a href="https://github.com/gully-labs"><img src="https://img.shields.io/badge/GitHub-0B0A16?style=for-the-badge&labelColor=06050D&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://gullystudio.xyz">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/gullystudio-logo-transparent.png">
+      <img alt="Gully Studio" src=".github/assets/gullystudio-logo-on-dark-2400x1000.png" width="360">
+    </picture>
+  </a>
 </p>
 
-<p align="center"><b>Gully Game SDK: Unity client for Gully ID sign-in, Gully Chain reads, Gully Pay x402 pay-per-call and Gully Arcade score attestation. MIT.</b></p>
+<p align="center"><b>Web3 Gaming Studio &amp; Ad Network. Unity 3D games on Gully Chain.</b></p>
 
-<p align="center"><sub>Built by <a href="https://gullylabs.xyz">Gully Labs</a>. You Think It, We Ship It.</sub></p>
+<p align="center">Unity client for Gully ID sign-in, Gully Chain reads, Gully Pay x402 pay-per-call and Gully Arcade score attestation. MIT.</p>
+
+<p align="center">
+  <a href="https://gullystudio.xyz"><img src="https://img.shields.io/badge/gullystudio.xyz-1E8BFF?style=for-the-badge&labelColor=06121F&logo=googlechrome&logoColor=06121F" alt="Website"></a>
+  <a href="https://docs.gullylabs.xyz"><img src="https://img.shields.io/badge/Docs-07121F?style=for-the-badge&labelColor=06121F&logo=readthedocs&logoColor=1E8BFF" alt="Docs"></a>
+  <a href="https://discord.com/invite/tY2ErsNNBp"><img src="https://img.shields.io/badge/Discord-07121F?style=for-the-badge&labelColor=06121F&logo=discord&logoColor=5865F2" alt="Discord"></a>
+  <a href="https://x.com/Gully_Labs"><img src="https://img.shields.io/badge/@Gully__Labs-07121F?style=for-the-badge&labelColor=06121F&logo=x&logoColor=white" alt="X"></a>
+</p>
+
+<p align="center"><sub>Built and run by <a href="https://gullylabs.xyz">Gully Labs</a>. You Think It, We Ship It.</sub></p>
 
 ---
 <!-- gully-header:end -->
@@ -130,3 +137,17 @@ on every push and the Unity tests when the repository variable `UNITY_CI=true` a
 ## Licence
 
 MIT, see `LICENSE.md`. (c) 2026 Gully Labs.
+
+
+<!-- gully-footer:start -->
+---
+
+<p align="center">
+  <a href="https://gullylabs.xyz">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/powered-by-gully-labs-dark-2x.png">
+      <img alt="Powered by Gully Labs" src=".github/assets/powered-by-gully-labs-light-2x.png" width="254" height="64">
+    </picture>
+  </a>
+</p>
+<!-- gully-footer:end -->
