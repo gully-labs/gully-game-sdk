@@ -17,7 +17,7 @@ namespace GullyLabs.GameSdk
     {
         public string scheme;      // "exact"
         public string network;     // "gully-chain-testnet", "base", ...
-        public string asset;       // "ETH", "WETH", "USDC", "GLUSD"
+        public string asset;       // "ETH", "WETH", "USDC"
         public string amount;      // integer base units as a string
         public string payTo;       // settlement address
         public int maxTimeoutSeconds;
