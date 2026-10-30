@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace GullyLabs.GameSdk
 {
-    /// <summary>ERC-20 reads and transfer calldata (WETH on Gully Chain Testnet, glUSD later).</summary>
+    /// <summary>ERC-20 reads and transfer calldata (WETH and USDC.e on Gully Chain Testnet).</summary>
     public static class Erc20
     {
         public const string BalanceOfSig = "balanceOf(address)";
