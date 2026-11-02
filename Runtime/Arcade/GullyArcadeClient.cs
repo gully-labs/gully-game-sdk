@@ -28,13 +28,16 @@ namespace GullyLabs.GameSdk
 
         public string AttestUrl { get; }
         public string ArcadeAddress { get; }
+        /// <summary>The chain the score is submitted on: the network selected when the client was created.</summary>
+        public long ChainId { get; }
         public JsonRpcClient Rpc { get; }
 
         public GullyArcadeClient(string attestUrl = null, JsonRpcClient rpc = null, string arcadeAddress = null)
         {
-            AttestUrl = (attestUrl ?? GullyChain.TestnetArcadeAttestUrl).TrimEnd('/');
+            ChainId = GullyChain.Network.ChainId;
+            AttestUrl = (attestUrl ?? GullyChain.Network.RequireArcadeAttestUrl()).TrimEnd('/');
             Rpc = rpc ?? new JsonRpcClient();
-            ArcadeAddress = arcadeAddress ?? GullyChain.TestnetArcadeAddress;
+            ArcadeAddress = arcadeAddress ?? GullyChain.Network.RequireArcadeAddress();
         }
 
         // ---- attestation server ---------------------------------------------------------------------------
@@ -102,7 +105,7 @@ namespace GullyLabs.GameSdk
                 To = ArcadeAddress,
                 Data = ArcadeAbi.EncodeSubmitScore(attestation),
                 Value = BigInteger.Zero,
-                ChainId = GullyChain.TestnetChainId,
+                ChainId = ChainId,
             });
         }
     }

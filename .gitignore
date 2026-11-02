@@ -5,6 +5,10 @@ Obj/
 Logs/
 UserSettings/
 *.csproj
+# the plain .NET tests of the network config are committed (Tools~ is not imported by Unity)
+!Tools~/dotnet-tests/*.csproj
+Tools~/dotnet-tests/bin/
+Tools~/dotnet-tests/obj/
 *.sln
 .vs/
 .idea/

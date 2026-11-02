@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+- Networks: `GullyNetwork` (chain id, RPC, explorer, WETH, x402 network, arcade address and attestation URL) and
+  `GullyChain.Use(network)` / `GullyChain.Network`. Testnet stays the default. `GullyNetwork.Mainnet` (48559) has no
+  built-in RPC, explorer or contract values; SDK calls that need one throw `GullyNetworkNotConfiguredException`
+  instead of falling back to testnet values. `JsonRpcClient`, `GullyArcadeClient`, `X402Client`,
+  `TransactionRequest`, `GullyChain.TxUrl/AddressUrl/GullyRpcUrl` and the editor menu read the selected network.
+- `X402Client.Choose` refuses to pick a payment option when no x402 network is configured, instead of paying the
+  first option offered.
+- Plain .NET tests for the network config (`Tools~/dotnet-tests`, no Unity licence needed).
+
 ## 0.1.0 (2026-10-25)
 
 First public version. Work in progress: APIs may change before 1.0.

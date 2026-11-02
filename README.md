@@ -74,7 +74,7 @@ using GullyLabs.GameSdk;
 // Chain reads: public testnet RPC by default; production games use their Gully RPC key.
 var rpc = new JsonRpcClient(GullyChain.GullyRpcUrl("<your-gully-rpc-project>")); // or new JsonRpcClient()
 long block = await rpc.BlockNumberAsync();
-var weth = await Erc20.BalanceOfAsync(rpc, GullyChain.TestnetWeth, player);
+var weth = await Erc20.BalanceOfAsync(rpc, GullyChain.Network.RequireWeth(), player);
 
 // Arcade: start a run, play from the seed, attest, submit.
 var arcade = new GullyArcadeClient(rpc: rpc);
@@ -106,7 +106,27 @@ Unity game ──GullyIdClient──▶ id.gullychain.xyz (Hydra OIDC)        su
 ```
 
 Gully Chain Testnet: chain id `485590`, explorer `https://testnet-explorer.gullychain.xyz`, GullyArcade v1.0 at
-`0xe573789b235314661DEdDA08a18Ca261c069c872`. Mainnet constants are added when the chain launches.
+`0xe573789b235314661DEdDA08a18Ca261c069c872`.
+
+## Networks
+
+Every chain value the SDK uses (chain id, RPC, explorer, WETH, x402 network, arcade contract and attestation URL)
+comes from one `GullyNetwork`. **Gully Chain Testnet is the default.** Pick another once at start-up, before
+creating clients:
+
+```csharp
+// Gully Chain mainnet (48559, parent Arbitrum One): only the id and name are built in. Pass the launch values.
+GullyChain.Use(GullyNetwork.Mainnet.With(
+    rpc: "<mainnet RPC or GullyChain.GullyRpcUrl(key, 48559)>",
+    explorer: "<mainnet explorer>",
+    arcadeAddress: "<GullyArcade on mainnet>",
+    arcadeAttestUrl: "<mainnet attestation server>",
+    x402Network: "<Gully Pay's mainnet network id>"));
+```
+
+A value the selected network does not have is never replaced by a testnet one: the call that needs it throws
+`GullyNetworkNotConfiguredException`. `GullyChain.Testnet*` constants stay for existing code.
+Tests of the network config run without Unity: `dotnet test "Tools~/dotnet-tests"`.
 
 ## Brand defaults
 
