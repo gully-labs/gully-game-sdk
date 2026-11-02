@@ -9,9 +9,9 @@ namespace GullyLabs.GameSdk.Editor
         private static void Docs() => Application.OpenURL("https://github.com/gully-labs/gully-game-sdk#readme");
 
         [MenuItem("Gully/Game SDK/Gully Chain explorer")]
-        private static void Explorer() => Application.OpenURL(GullyChain.TestnetExplorer);
+        private static void Explorer() => Application.OpenURL(GullyChain.Network.RequireExplorer());
 
-        [MenuItem("Gully/Game SDK/Ping Gully Chain Testnet")]
+        [MenuItem("Gully/Game SDK/Ping Gully Chain")]
         private static async void Ping()
         {
             try

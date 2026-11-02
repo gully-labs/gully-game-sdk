@@ -21,6 +21,14 @@ jobs:
           node-version: 22
       - run: node Tools~/check-package.mjs
 
+  network-tests:
+    name: Network config tests (.NET, no Unity)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # the runner image ships the .NET 8 SDK; GullyChain.cs + GullyNetwork.cs are plain C#
+      - run: dotnet test "Tools~/dotnet-tests" --nologo
+
   unity-tests:
     name: Unity tests (EditMode)
     # Needs a Unity licence in secrets; switch on with the repository variable UNITY_CI=true.

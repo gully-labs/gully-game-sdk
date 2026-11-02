@@ -8,7 +8,7 @@ namespace GullyLabs.GameSdk
         public string To;
         public string Data = "0x";
         public BigInteger Value = BigInteger.Zero;
-        public long ChainId = GullyChain.TestnetChainId;
+        public long ChainId = GullyChain.Network.ChainId;
     }
 
     /// <summary>

@@ -30,7 +30,8 @@ namespace GullyLabs.GameSdk
     }
 
     /// <summary>
-    /// Minimal Ethereum JSON-RPC client over <see cref="GullyHttp"/>. Defaults to the public Gully Chain Testnet RPC;
+    /// Minimal Ethereum JSON-RPC client over <see cref="GullyHttp"/>. Defaults to the public RPC of the selected
+    /// <see cref="GullyChain.Network"/> (Gully Chain Testnet unless the game picked another);
     /// pass your Gully RPC gateway URL (<see cref="GullyChain.GullyRpcUrl"/>) for production traffic.
     /// </summary>
     public sealed class JsonRpcClient
@@ -42,7 +43,7 @@ namespace GullyLabs.GameSdk
         public string Url { get; }
         private int _id;
 
-        public JsonRpcClient(string url = null) { Url = string.IsNullOrEmpty(url) ? GullyChain.TestnetRpc : url; }
+        public JsonRpcClient(string url = null) { Url = string.IsNullOrEmpty(url) ? GullyChain.Network.RequireRpc() : url; }
 
         public async Task<string> CallRawAsync(string method, string paramsJson)
         {

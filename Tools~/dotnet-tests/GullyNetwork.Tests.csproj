@@ -1,0 +1,19 @@
+<!-- Plain .NET tests for the Unity-free network config (Runtime/Chain/GullyChain.cs + GullyNetwork.cs). Unity's own
+     EditMode tests need a Unity licence; these run anywhere:  dotnet test "Tools~/dotnet-tests"  -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <IsPackable>false</IsPackable>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Runtime/Chain/GullyChain.cs" Link="Runtime/GullyChain.cs" />
+    <Compile Include="../../Runtime/Chain/GullyNetwork.cs" Link="Runtime/GullyNetwork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+  </ItemGroup>
+</Project>

@@ -20,7 +20,7 @@ namespace GullyLabs.GameSdk
     public sealed class X402Client
     {
         public const string PaymentHeader = "X-PAYMENT";
-        public string PreferredNetwork = GullyChain.TestnetX402Network;
+        public string PreferredNetwork = GullyChain.Network.X402Network;
 
         public static X402Requirements ParseRequirements(HttpResponse res)
         {
@@ -33,8 +33,10 @@ namespace GullyLabs.GameSdk
 
         public X402Accept Choose(X402Requirements req)
         {
+            // No preferred network (mainnet before its x402 id is configured): refuse rather than guess a chain.
+            var preferred = string.IsNullOrEmpty(PreferredNetwork) ? GullyChain.Network.RequireX402Network() : PreferredNetwork;
             foreach (var a in req.accepts)
-                if (string.Equals(a.network, PreferredNetwork, StringComparison.OrdinalIgnoreCase)) return a;
+                if (string.Equals(a.network, preferred, StringComparison.OrdinalIgnoreCase)) return a;
             return req.accepts[0];
         }
 
@@ -43,7 +45,7 @@ namespace GullyLabs.GameSdk
         {
             var amount = BigInteger.Parse(a.amount);
             if (amount.Sign <= 0) throw new X402Exception("amount must be positive");
-            var chainId = a.extra != null && a.extra.chainId > 0 ? a.extra.chainId : GullyChain.TestnetChainId;
+            var chainId = a.extra != null && a.extra.chainId > 0 ? a.extra.chainId : GullyChain.Network.ChainId;
             if (a.extra != null && a.extra.native)
                 return new TransactionRequest { To = a.payTo, Value = amount, Data = "0x", ChainId = chainId };
             if (a.extra == null || string.IsNullOrEmpty(a.extra.assetAddress))
