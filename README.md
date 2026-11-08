@@ -107,7 +107,7 @@ Unity game ──GullyIdClient──▶ id.gullychain.xyz (Hydra OIDC)        su
           ──ITransactionSender──▶ player's account (passkey smart account, sponsored gas)
 ```
 
-Gully Chain Testnet: chain id `485590`, explorer `https://testnet-explorer.gullychain.xyz`, GullyArcade v1.0 at
+Gully Chain Testnet: chain id `485590`, explorer `https://testnet.gullyscan.xyz`, GullyArcade v1.0 at
 `0xe573789b235314661DEdDA08a18Ca261c069c872`. Mainnet constants are added when the chain launches.
 
 ## Brand defaults
