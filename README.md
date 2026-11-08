@@ -22,6 +22,8 @@
 <p align="center"><sub>Built and run by <a href="https://gullylabs.xyz">Gully Labs</a>. You Think It, We Ship It.</sub></p>
 
 ---
+<p align="center"><sub>Community: <a href="https://t.me/GullyChain">Telegram news</a> · <a href="https://t.me/GullyChainDeploys">Deploys</a> · <a href="https://t.me/GullyBuyBot">BuyBot</a> · <a href="https://t.me/GullyChainBot">Chain Bot</a> · <a href="https://discord.com/invite/tY2ErsNNBp">Discord</a></sub></p>
+
 <!-- gully-header:end -->
 
 <p align="center"><a href="https://gullystudio.xyz"><img src="Documentation~/brand/x-banner-1500x500.png" width="750" height="250" alt="GullyStudio"></a></p>
