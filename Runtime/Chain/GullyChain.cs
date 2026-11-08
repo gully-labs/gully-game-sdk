@@ -8,7 +8,7 @@ namespace GullyLabs.GameSdk
         public const string TestnetCaip2 = "eip155:485590";
         /// <summary>Free, rate-limited public RPC. Production games use a Gully RPC key (see <see cref="GullyRpcUrl"/>).</summary>
         public const string TestnetRpc = "https://testnet-rpc.gullychain.xyz";
-        public const string TestnetExplorer = "https://testnet-explorer.gullychain.xyz";
+        public const string TestnetExplorer = "https://testnet.gullyscan.xyz";
         public const string TestnetWeth = "0x26aCCCb2e98ca9e067E58668Aa3B101beF432754";
         /// <summary>x402 network id Gully Pay uses for this chain.</summary>
         public const string TestnetX402Network = "gully-chain-testnet";
